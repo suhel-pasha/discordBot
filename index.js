@@ -5,12 +5,17 @@ client.on('ready', () => {
   console.log(`Logged in as ${client.user.tag}!`);
 });
 
-client.on('interactionCreate', async interaction => {
-  if (!interaction.isChatInputCommand()) return;
+client.on("message", msg => {
+  if (msg.author.bot) return
 
-  if (interaction.commandName === 'ping') {
-    await interaction.reply('Pong!');
+  if (msg.content == "Hi") {
+    msg.reply(`Hello`);
   }
+
+  if (msg.content == "kill") {
+    process.exit();
+  }
+
 });
 const token = process.env.DISCORD_TOKEN;
 client.login(token);
