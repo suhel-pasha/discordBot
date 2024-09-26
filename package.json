@@ -19,6 +19,7 @@
   "homepage": "https://github.com/suhel-pasha/discordBot#readme",
   "description": "",
   "dependencies": {
-    "discord.js": "^14.16.2"
+    "discord.js": "^14.16.2",
+    "dotenv": "^16.4.5"
   }
 }
