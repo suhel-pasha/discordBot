@@ -22,7 +22,7 @@ client.on("ready", async () => {
   console.log(`🤖 Logged in as ${client.user.tag}`);
 
   // Replace this with your Discord user ID
-  const userId = process.env.USER_ID;
+  const userId = "477395610278821898";
 
   // Function to send periodic messages
   const sendHeartbeat = async () => {
